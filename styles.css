@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*nav bar setting*/
+
+nav {
+  background-color: #360003;
+}
+
+nav ul {
+  display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav li {
+  list-style-type: none;
+
+  width: 50%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav li.selected {
+  color: #BABABA;
+}
+
+nav a:link,
+nav a:visited {
+  color: #E8F4FF;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:visited:hover,
+nav a:active,
+nav a:visited:active,
+.sidebar a:hover,
+nav a:visited:hover {
+  color: #BABABA;
+  text-decoration: underline;
+}
+
+/*sidebar settings*/
+
+.sidebar {
+  float: left;
+  width: 200px;
+  height: 400px;
+  padding : 20px;
+  background-color: #DE686C;    /* Red */
+}
+
+.sidebar li, .link {
+  color: #E0E0E0;
+  margin-bottom: 50px;
+}
+
+/*description settings*/
+
+.description {
+  float: left;
+  width: 675px;
+  height: 400px;
+  padding : 20px;
+  margin: 10px;
+  background-color: #FDFFCC;    /* Yellow */
+  border-radius: 20px;
+}
+
+/*Dimension of the main image*/
+.main-image {
+  float: left;
+  width: 300px;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/*add a margin between the <p>*/
+p,h1 {
+  margin-bottom: 20px;
+}
+
+h2,h3 {
+  margin-bottom: 10px;
+}
+
+
+/*footer settings*/
+.footer {
+  clear: both;
+  overflow: hidden;
+  background-color: #DE686C;    /* Light red */
+}
+
+.column {
+  float: left;
+  width: 31%;
+  margin: 20px 1.15%;
+  height: 225px;
+  background-color: #A31016;    /* Red */
+  border-radius: 20px;
+}
+
+
+.flower-icons {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+
+.flower-name {
+  margin-top: 20px;
+  color: #E0E0E0;
+}
+
+.comment {
+  margin: 10px;
+  overflow: hidden;  /* So that it doesn't flow under the flower icon */
+  color: #E0E0E0;
+}
+
+.page {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #DE686C
+}
+
+.page-faq {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  overflow: hidden;/*the height of floated elements is recognized*/
+  background-color: #1C0002; /* redish black */
+}
+
+/*For the faq*/
+.instructions {
+  color: #999999;
+  font-size: 14px;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #FFFFFF;
+  background-color: #A31016;
+
+  border: none;
+  border-radius: 3px;
+
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+button:hover,
+button:active {
+  background-color: #DE5f72;
+}
+
+
+/*for other medias*/
+@media only screen and (max-width: 400px) {
+
+  nav {
+    display : block;
+    float: left;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+    height: 100vh;
+
+  }
+  nav ul {
+    float:left;
+    display: block;
+  }
+
+  nav li {
+    float:left;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+
+  .sidebar {
+    float: none;
+    padding: 10px;
+    background-color: #DE686C;    /* Red */
+    max-height: 200px;
+    margin-left: 55px;
+  }
+
+  .description {
+    margin-left: 43px;
+    float: none;
+    max-width: 300px;
+    height: auto;
+    background-color: #FDFFCC;    /* Yellow */
+    border-radius: 20px;
+  }
+
+  .main-image {
+    float: none;
+    max-width:100%;
+    widht: auto;
+    height:auto;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  .footer {
+    margin-left: 43px;
+    clear: both;
+    background-color: #DE686C;    /* Light red */
+  }
+
+  .column {
+    float: none;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px 4%;
+  }
+
+
+  .flower-icons {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 40px;
+    background-color: #D6E9FE;
+  }
+
+
+  .page {
+    max-width: 350px;
+  }
+
+  .page-faq {
+    margin-left: 70px;
+    max-width: 280px;
+  }
+}
